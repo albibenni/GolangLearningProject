@@ -29,6 +29,7 @@ func main() {
 		time.Now(),
 	}
 	log.Println("Trying type: ", user.FirstName, user)
+	user.printFirstName()
 }
 
 // generic function
@@ -45,4 +46,9 @@ func saySomethingTwice() (string, string) {
 func pointerChange(s *string) {
 	newValue := "Value changed"
 	*s = newValue
+}
+
+// struct receiver
+func (s *User) printFirstName() {
+	log.Println(s.FirstName)
 }
