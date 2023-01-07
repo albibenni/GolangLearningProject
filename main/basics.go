@@ -4,5 +4,10 @@ import "fmt"
 
 func main() {
 	var stringToDeclare = "Name"
-	fmt.Println(`something to print `, stringToDeclare)
+	var whatWasSaid = saySomething()
+	fmt.Println(`something to print `, stringToDeclare, whatWasSaid)
+}
+
+func saySomething() string {
+	return "Something"
 }
