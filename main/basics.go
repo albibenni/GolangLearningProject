@@ -1,6 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+	"time"
+)
+
+type User struct {
+	FirstName   string
+	LastName    string
+	PhoneNumber string
+	Age         int
+	BirthDate   time.Time
+}
 
 func main() {
 	var stringToDeclare = "Name"
@@ -9,6 +21,14 @@ func main() {
 	fmt.Println(`something to print `, stringToDeclare, whatWasSaid, whatWasSaidTwice, theOther)
 	pointerChange(&whatWasSaid)
 	fmt.Println(`something to print `, stringToDeclare, whatWasSaid, whatWasSaidTwice, theOther)
+	user := User{
+		"Nome",
+		"Cognome",
+		"123",
+		12,
+		time.Now(),
+	}
+	log.Println("Trying type: ", user.FirstName, user)
 }
 
 // generic function
