@@ -7,6 +7,8 @@ func main() {
 	var whatWasSaid = saySomething()
 	var whatWasSaidTwice, theOther = saySomethingTwice()
 	fmt.Println(`something to print `, stringToDeclare, whatWasSaid, whatWasSaidTwice, theOther)
+	pointerChange(&whatWasSaid)
+	fmt.Println(`something to print `, stringToDeclare, whatWasSaid, whatWasSaidTwice, theOther)
 }
 
 func saySomething() string {
@@ -14,4 +16,9 @@ func saySomething() string {
 }
 func saySomethingTwice() (string, string) {
 	return "Something", "Else"
+}
+
+func pointerChange(s *string) {
+	newValue := "Value changed"
+	*s = newValue
 }
