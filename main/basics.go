@@ -5,9 +5,13 @@ import "fmt"
 func main() {
 	var stringToDeclare = "Name"
 	var whatWasSaid = saySomething()
-	fmt.Println(`something to print `, stringToDeclare, whatWasSaid)
+	var whatWasSaidTwice, theOther = saySomethingTwice()
+	fmt.Println(`something to print `, stringToDeclare, whatWasSaid, whatWasSaidTwice, theOther)
 }
 
 func saySomething() string {
 	return "Something"
+}
+func saySomethingTwice() (string, string) {
+	return "Something", "Else"
 }
