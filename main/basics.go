@@ -13,8 +13,12 @@ type User struct {
 	Age         int
 	BirthDate   time.Time
 }
+type SimpleUser struct {
+	FirstName string
+	LastName  string
+}
 
-func main() {
+func oldMain() {
 	var stringToDeclare = "Name"
 	var whatWasSaid = saySomething()
 	var whatWasSaidTwice, theOther = saySomethingTwice()
