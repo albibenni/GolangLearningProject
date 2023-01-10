@@ -2,7 +2,7 @@ package main
 
 import "log"
 
-func main() {
+func main3() {
 	testForRangeLoop()
 	log.Println()
 	testForRangeLoopUnderscore()
