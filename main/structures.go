@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-func main() {
+func mainSecondOld() {
 	log.Println("Something")
 
 	me := SimpleUser{
@@ -28,6 +28,7 @@ func main() {
 	sort.Ints(numbers)
 	log.Println(numbers)
 	log.Println(numbers[0:3])
+
 }
 
 func makeASlice(me SimpleUser) []SimpleUser {
