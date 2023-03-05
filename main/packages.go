@@ -5,7 +5,7 @@ import (
 	"log"
 )
 
-func main() {
+func mainIsBack() {
 	var myVar helpers.SomeType
 	myVar.TypeName = "Name"
 	log.Println(myVar.TypeName)
