@@ -9,7 +9,7 @@ func CalculateValue(intChan chan int) {
 	intChan <- randomNumber
 }
 
-func main() {
+func channlesmain() {
 	intChan := make(chan int)
 	defer close(intChan)
 
