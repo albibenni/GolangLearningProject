@@ -1,8 +1,9 @@
 package main
 
-import "golangLearningProject/main/exercises"
+import "golangLearningProject/main/course"
 
 func main() {
 	//exercises.EOneDotOne()
-	exercises.EOneDotTwo()
+	//exercises.EOneDotTwo()
+	course.JsonOperations()
 }
